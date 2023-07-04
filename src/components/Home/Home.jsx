@@ -1,10 +1,10 @@
-import { H1 } from "./styles"
+import { HomeContainer } from "./styles"
 
 const Home = () => {
   return (
-    <div>
-      <H1>Home</H1>
-    </div>
+    <HomeContainer>
+
+    </HomeContainer>
   )
 }
 
