@@ -17,22 +17,22 @@ const Header = () => {
         </LocalTelSection>
         <NavBar>
           <NavLink>
-            <StyledLink to="#home">Home</StyledLink>
+            <StyledLink to="#home">Início</StyledLink>
           </NavLink>
           <NavLink>
-            <StyledLink to="#about">About</StyledLink>
+            <StyledLink to="#about">Sobre mim</StyledLink>
           </NavLink>
           <NavLink>
-            <StyledLink to="#therapy">Therapy</StyledLink>
+            <StyledLink to="#therapy">Terapia</StyledLink>
           </NavLink>
           <NavLink>
-            <StyledLink to="#services">Services</StyledLink>
+            <StyledLink to="#services">Serviços</StyledLink>
           </NavLink>
           <NavLink>
-            <StyledLink to="#opinions">Opinions</StyledLink>
+            <StyledLink to="#opinions">Opiniões</StyledLink>
           </NavLink>
           <NavLink>
-            <StyledLink to="#query">Query</StyledLink>
+            <StyledLink to="#query">Dúvidas</StyledLink>
           </NavLink>
         </NavBar>
       </RightSection>
