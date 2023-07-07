@@ -9,15 +9,35 @@ export const HeaderContainer = styled.div`
   width: 100%;
   padding: 0px 27px;
   justify-content: space-between;
+
+  & .hamburger-react {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    position: absolute;
+    align-items: center;
+    padding: 15px;
+    z-index: 999;
+
+    & > .hamburger-react {
+      display: block;
+    }
+  }
 `;
 
 export const LogoIcon = styled.div`
   width: 80px;
   height: 80px;
   background-image: url(${Logo});
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    width: 15vw;
+    height: 15vw;
+  }
 `;
 
 export const RightSection = styled.div`

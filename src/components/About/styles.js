@@ -20,7 +20,7 @@ export const AboutContainer = styled.div`
 
 export const DotsSVG = styled(dots)`
   position: absolute;
-  bottom: -100px;
+  bottom: -150px;
   left: 0;
   width: 5%;
 
@@ -34,10 +34,12 @@ export const FlowersImage = styled.img.attrs({
 })`
   position: absolute;
   top: 0;
-  right: 0;
+  right: -130px;
   height: 100%;
+  transform: rotateY(180deg);
+  z-index: -1;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1130px) {
     display: none;
   }
 `;

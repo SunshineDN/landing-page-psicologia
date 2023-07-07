@@ -22,6 +22,7 @@ export const HomeContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
+    margin-top: 0;
   }
 `;
 

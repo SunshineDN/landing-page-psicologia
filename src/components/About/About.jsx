@@ -4,7 +4,6 @@ const About = () => {
   return (
     <AboutContainer>
       <DotsSVG />
-      <FlowersImage />
       <TextSection>
         <Title>Sobre mim</Title>
         <Description>
@@ -16,6 +15,7 @@ const About = () => {
         </Description>
       </TextSection>
       <ImageWrapper>
+        <FlowersImage />
         <Image />
         <ImageBorder />
       </ImageWrapper>

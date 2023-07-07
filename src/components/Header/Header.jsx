@@ -1,6 +1,15 @@
+import { useState } from 'react'
 import { HeaderContainer, LocalIcon, LocalTelSection, LocalWrapper, LogoIcon, NavBar, RightSection, RightText, StyledLink, NavLink, TelIcon, TelWrapper } from './styles'
+import { Divide as Hamburger } from 'hamburger-react'
 
 const Header = () => {
+  const [active, setActive] = useState(false);
+  const [widthViewPort, setWidthViewPort] = useState(window.innerWidth);
+
+  window.addEventListener('resize', () => {
+    setWidthViewPort(window.innerWidth);
+  });
+
   return (
     <HeaderContainer>
       <LogoIcon />
@@ -36,6 +45,13 @@ const Header = () => {
           </NavLink>
         </NavBar>
       </RightSection>
+      <Hamburger
+        color="#fff"
+        size={ widthViewPort * 0.07 }
+        toggled={ active }
+        toggle={ setActive }
+        duration={ 0.5 }
+      />
     </HeaderContainer>
   )
 }

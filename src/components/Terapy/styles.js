@@ -83,6 +83,6 @@ export const Leaf = styled.div`
   background-repeat: no-repeat;
 
   @media screen and (max-width: 768px) {
-    width: 150px;
+    display: none;
   }
 `;
