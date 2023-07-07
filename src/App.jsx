@@ -3,6 +3,7 @@ import Home from './components/Home/Home'
 import Header from './components/Header/Header';
 import CardsComponent from './components/Home/Cards';
 import About from './components/About/About';
+import Terapy from './components/Terapy/Terapy';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -19,6 +20,7 @@ const App = () => {
         <Home />
         <CardsComponent />
         <About />
+        <Terapy />
       </Container>
   )
 }

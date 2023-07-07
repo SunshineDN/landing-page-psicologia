@@ -1,6 +1,7 @@
 const theme = () => {
   return {
     rose: '#C783E3',
+    rose_2: '#F6EDFF',
     rose_dark: '#A161BC',
     rose_dark_2: '#A98BE1',
     blank: '#FFFFFF',

@@ -10,6 +10,12 @@ export const AboutContainer = styled.div`
   align-content: flex-start;
   position: relative;
   width: 100%;
+  gap: 50px 115px;
+  margin-bottom: 170px;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const DotsSVG = styled(dots)`
@@ -17,6 +23,10 @@ export const DotsSVG = styled(dots)`
   bottom: -100px;
   left: 0;
   width: 5%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const FlowersImage = styled.img.attrs({
@@ -26,6 +36,10 @@ export const FlowersImage = styled.img.attrs({
   top: 0;
   right: 0;
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const TextSection = styled.div`
@@ -37,21 +51,65 @@ export const TextSection = styled.div`
   max-width: 500px;
 `;
 
-export const Image = styled.img.attrs({
-  src: UserImage,
-})`
-  min-width: 285px;
-  max-width: 600px;
-  border-radius: 227px 0px 225px 0px;
+export const Title = styled.h2`
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Gupter";
+  color: ${({ theme }) => theme.rose_dark};
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: -10px;
     left: 0;
-    width: 285px;
-    height: 285px;
-    background-color: ${({ theme }) => theme.rose};
+    width: 65%;
+    height: 5px;
+    background-color: ${({ theme }) => theme.rose_dark};
   }
+`;
+
+export const Description = styled.p`
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Calibri";
+  color: ${({ theme }) => theme.grey};
+
+  & > span {
+    font-weight: 700;
+  }
+
+  /* @media screen and (max-width: 768px) {
+    text-align: justify;
+  } */
+`;
+
+export const ImageWrapper = styled.div`
+  min-width: 285px;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+`;
+
+export const Image = styled.img.attrs({
+  src: UserImage,
+})`
+  width: 100%;
+  height: auto;
+  border-radius: 27% 0px 27% 0px;
+`;
+
+export const ImageBorder = styled.div`
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 100%;
+  height: 97%;
+  border-radius: 27% 0px 27% 0px;
+  border: 3px solid ${({ theme }) => theme.rose};
+  z-index: -1;
 `;

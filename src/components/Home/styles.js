@@ -95,11 +95,15 @@ export const WhatsAppWrapper = styled(Link)`
   background: ${({ theme }) => theme.rose};
   box-shadow: 0px 4.381547451019287px 0px 0px ${({ theme }) => theme.rose_dark};
   text-decoration: none;
+
+  @media (max-width: 768px) {
+    align-self: center;
+  }
 `;
 
 export const WhatsAppText = styled.p`
   color: ${({ theme }) => theme.blank};
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Baloo Bhai 2";
   font-style: normal;
   font-weight: 500;
@@ -117,7 +121,7 @@ export const Cards = styled.div`
   align-items: center;
   gap: 15px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   flex-wrap: wrap;
 `;
 
