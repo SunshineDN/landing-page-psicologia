@@ -39,7 +39,7 @@ export const FlowersImage = styled.img.attrs({
   transform: rotateY(180deg);
   z-index: -1;
 
-  @media screen and (max-width: 1130px) {
+  @media screen and (max-width: 1392px) {
     display: none;
   }
 `;

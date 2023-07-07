@@ -4,6 +4,8 @@ import Header from './components/Header/Header';
 import CardsComponent from './components/Home/Cards';
 import About from './components/About/About';
 import Terapy from './components/Terapy/Terapy';
+import BoxTerapy from './components/Terapy/BoxTerapy';
+import PsychoTherapy from './components/PsychoTherapy/PsychoTherapy';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -21,6 +23,8 @@ const App = () => {
         <CardsComponent />
         <About />
         <Terapy />
+        <BoxTerapy />
+        <PsychoTherapy />
       </Container>
   )
 }

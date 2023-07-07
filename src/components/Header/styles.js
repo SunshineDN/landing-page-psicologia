@@ -12,6 +12,7 @@ export const HeaderContainer = styled.div`
 
   & .hamburger-react {
     display: none;
+    border-radius: 4px;
   }
 
   @media (max-width: 768px) {
