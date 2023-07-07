@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import BG from "../../assets/BG_Home.png";
-import MaskBG from "../../assets/Mask_BG_Home.svg";
 import ProfileIMG from "../../assets/profile 2.png";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
@@ -8,53 +6,41 @@ import Acolhimento from "../../assets/acolhimento.svg";
 import Relacionamento from "../../assets/relacionamento.svg";
 import Sexualidade from "../../assets/sexualidade.svg";
 import Autoconhecimento from "../../assets/autoconhecimento.svg";
+import { ReactComponent as Bottom} from "../../assets/bottom.svg"
 
 export const HomeContainer = styled.div`
   margin-top: 6px;
+  padding: 40px 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 1100px;
+  min-height: 100%;
   position: relative;
+  background: ${({ theme }) => theme.rose_dark_2};
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 
-export const BGHome = styled.div`
-  background-image: url(${BG});
-  background-size: contain;
-  background-position: top;
-  background-repeat: repeat-x;
-  transform: scaleX(-1);
-  width: 100%;
-  height: 100%;
-  position: relative;
-`;
-
-export const Mask = styled.div`
-  background-image: url(${MaskBG});
-  background-size: contain;
-  background-position: top;
-  background-repeat: repeat-x;
-  transform: scaleX(-1);
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
+export const BottomBG = styled(Bottom)`
   position: absolute;
-`;
+  bottom: -4.5%;
+  width: 100%;
+  height: 5%;
 
-export const Person = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  top: 55px;
+  & > path {
+    fill: ${({ theme }) => theme.rose_dark_2};
+  }
 `;
 
 export const Image = styled.img.attrs({
   src: ProfileIMG,
 })`
-  width: 35%;
+  min-width: 285px;
+  max-width: 600px;
 `;
 
 export const TextSection = styled.div`
@@ -62,7 +48,8 @@ export const TextSection = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 35%;
+  gap: 25px;
+  max-width: 500px;
 `;
 
 export const TextInfo = styled.div`
@@ -73,8 +60,8 @@ export const TextInfo = styled.div`
 
 export const H1 = styled.h1`
   color: ${({ theme }) => theme.bg_box};
-  text-shadow: 0px 5.991482734680176px 116.83391571044922px 0px rgba(255, 255, 255, 0.80);
-  font-size: 50px;
+  text-shadow: 0px 5.991482734680176px 70px rgba(255, 255, 255, 0.80);
+  font-size: 60px;
   font-family: Gupter;
   font-style: normal;
   font-weight: 700;
@@ -82,7 +69,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
   color: ${({ theme }) => theme.bg_box};
-  font-size: 25px;
+  font-size: 20px;
   font-family: Calibri;
   font-style: normal;
   font-weight: 300;
@@ -91,8 +78,8 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h3`
   color: ${({ theme }) => theme.bg_box};
-  text-shadow: 0px 2.285831928253174px 44.5737190246582px 0px rgba(255, 255, 255, 0.80);
-  font-size: 20px;
+  text-shadow: 0px 5.991482734680176px 20px rgba(255, 255, 255, 0.80);
+  font-size: 16px;
   font-family: Calibri;
   font-style: normal;
   font-weight: 400;
@@ -101,7 +88,7 @@ export const H3 = styled.h3`
 
 export const WhatsAppWrapper = styled(Link)`
   display: flex;
-  padding: 10px 24px;
+  padding: 5px 24px;
   align-items: center;
   gap: 23px;
   border-radius: 35.683px;
@@ -112,7 +99,7 @@ export const WhatsAppWrapper = styled(Link)`
 
 export const WhatsAppText = styled.p`
   color: ${({ theme }) => theme.blank};
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Baloo Bhai 2";
   font-style: normal;
   font-weight: 500;
@@ -131,6 +118,7 @@ export const Cards = styled.div`
   gap: 15px;
   margin-top: 50px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 `;
 
 export const Card = styled.div`

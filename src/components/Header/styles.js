@@ -25,6 +25,10 @@ export const RightSection = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const LocalTelSection = styled.div`
