@@ -41,8 +41,11 @@ export const BottomBG = styled(Bottom)`
 export const Image = styled.img.attrs({
   src: ProfileIMG,
 })`
-  min-width: 50%;
-  max-width: 600px;
+  max-width: 500px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 70%;
+  }
 `;
 
 export const TextSection = styled.div`
