@@ -332,7 +332,7 @@ Error generating stack: `+A.message+`
   position: relative;
   width: 100%;
   gap: 50px 115px;
-  margin-bottom: 170px;
+  margin-bottom: 80px;
 
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
@@ -451,12 +451,12 @@ Error generating stack: `+A.message+`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 35px;
+    font-size: 17px;
     width: 90%;
     line-height: 1.5;
 
     &::after {
-      width: 75%;
+      width: 274px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -479,7 +479,7 @@ Error generating stack: `+A.message+`
 
   @media screen and (max-width: 768px) {
     width: 90%;
-    font-size: 20px;
+    font-size: 13px;
   }
 `,Yc=x.div`
   position: absolute;
