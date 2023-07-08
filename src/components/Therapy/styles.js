@@ -29,12 +29,14 @@ export const Title = styled.h2`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 35px;
+    font-size: 24px;
     width: 90%;
     line-height: 1.5;
 
     &::after {
-      width: 75%;
+      width: calc(100% - 40px);
+      max-width: 380px;
+      height: 3px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -46,6 +48,10 @@ export const TextWrapper = styled.div`
   position: relative;
   padding: 50px 0;
   background: ${({ theme }) => theme.rose_2};
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 0;
+  }
 `;
 
 export const Text = styled.p`
@@ -61,7 +67,7 @@ export const Text = styled.p`
 
   @media screen and (max-width: 768px) {
     width: 90%;
-    font-size: 20px;
+    font-size: 16px;
   }
 `;
 
@@ -120,8 +126,8 @@ export const BoxWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 50px 10px;
-    max-width: 300px;
+    padding: 50px 0;
+    width: 90%;
   }
 `;
 
@@ -163,9 +169,10 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   gap: 10px;
+  align-items: flex-start;
   width: 350px;
+  height: 260px;
   padding: 30px;
   border-radius: 12px;
   background-color: ${({ theme }) => theme.rose_dark};
@@ -206,7 +213,8 @@ export const Box = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
-    height: 300px;
+    height: 100%;
+    gap: 40px;
   }
 `;
 
@@ -215,6 +223,10 @@ export const BoxTitle = styled.h3`
   font-weight: 700;
   font-family: "Gupter";
   color: ${({ theme }) => theme.blank};
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const BoxText = styled.p`
@@ -223,4 +235,8 @@ export const BoxText = styled.p`
   font-family: "Gupter";
   color: ${({ theme }) => theme.blank};
   text-align: left;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;

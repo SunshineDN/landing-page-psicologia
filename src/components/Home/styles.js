@@ -19,11 +19,13 @@ export const HomeContainer = styled.div`
   min-height: 100%;
   position: relative;
   background: ${({ theme }) => theme.rose_dark_2};
+  gap: 70px;
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
     margin-top: 0;
     padding: 50px 20px;
+    gap: 30px;
   }
 `;
 
@@ -54,7 +56,7 @@ export const TextSection = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   gap: 25px;
-  max-width: 500px;
+  max-width: 550px;
 `;
 
 export const TextInfo = styled.div`
@@ -66,19 +68,19 @@ export const TextInfo = styled.div`
 export const H1 = styled.h1`
   color: ${({ theme }) => theme.bg_box};
   text-shadow: 0px 5.991482734680176px 70px rgba(255, 255, 255, 0.80);
-  font-size: 60px;
+  font-size: 64px;
   font-family: Gupter;
   font-style: normal;
   font-weight: 700;
 
   @media (max-width: 768px) {
-    font-size: 40px;
+    font-size: 35px;
   }
 `;
 
 export const H2 = styled.h2`
   color: ${({ theme }) => theme.bg_box};
-  font-size: 20px;
+  font-size: 24px;
   font-family: Calibri;
   font-style: normal;
   font-weight: 300;
@@ -92,7 +94,7 @@ export const H2 = styled.h2`
 export const H3 = styled.h3`
   color: ${({ theme }) => theme.bg_box};
   text-shadow: 0px 5.991482734680176px 20px rgba(255, 255, 255, 0.80);
-  font-size: 16px;
+  font-size: 20px;
   font-family: Calibri;
   font-style: normal;
   font-weight: 400;
@@ -144,6 +146,7 @@ export const Cards = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   gap: 15px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -162,6 +165,11 @@ export const Card = styled.div`
   border-radius: 30px;
   border: 1.33px solid ${({ theme }) => theme.rose_dark};
   background: ${({ theme }) => theme.bg_box};
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 200px;
+  }
 `;
 
 export const CardText = styled.p`

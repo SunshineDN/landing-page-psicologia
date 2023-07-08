@@ -19,7 +19,7 @@ export const BoxesInfoContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 850px;
+  min-height: 700px;
   width: 100%;
   position: relative;
   z-index: 2;
@@ -56,8 +56,8 @@ export const ShapeWave = styled(ShapeWaveIcon)`
 `;
 
 export const BoxInfo = styled.div`
-  width: 280px;
-  height: 200px;
+  width: 320px;
+  height: 240px;
   display: flex;
   padding: 31px 21px;
   flex-direction: column;
@@ -70,6 +70,12 @@ export const BoxInfo = styled.div`
   border-radius: 25.652px;
   border: 0.8px solid ${({ theme }) => theme.rose};
   box-shadow: 4.275305271148682px 8.550610542297363px 17.101221084594727px 0px rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    padding: 20px;
+    border: none;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -86,6 +92,10 @@ export const Title = styled.h2`
   line-height: 1.2;
   color: ${({ theme }) => theme.grey};
   font-family: "Gupter";
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const Text = styled.p`
@@ -100,19 +110,39 @@ export const Text = styled.p`
 export const Sigilo = styled(SigiloIcon)`
   width: 200px;
   min-height: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    min-height: 25%;
+  }
 `;
 
 export const Resultados = styled(ResultadosIcon)`
   width: 200px;
   min-height: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    min-height: 25%;
+  }
 `;
 
 export const Autonomia = styled(AutonomiaIcon)`
   width: 200px;
   min-height: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    min-height: 25%;
+  }
 `;
 
 export const Confiança = styled(ConfiançaIcon)`
   width: 200px;
   min-height: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    min-height: 25%;
+  }
 `;

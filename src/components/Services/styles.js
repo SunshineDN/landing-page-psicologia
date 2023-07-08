@@ -100,6 +100,10 @@ export const BottomTitle = styled.h2`
   font-weight: 700;
   font-size: 30px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const Text = styled.p`
@@ -111,6 +115,7 @@ export const Text = styled.p`
   font-size: 20px;
 
   @media screen and (max-width: 768px) {
+    font-size: 16px;
     text-align: center;
   }
 `;

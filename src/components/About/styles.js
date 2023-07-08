@@ -16,6 +16,7 @@ export const AboutContainer = styled.div`
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
     padding: 0 15px;
+    gap: 30px 0;
   }
 `;
 
@@ -52,6 +53,11 @@ export const TextSection = styled.div`
   align-items: flex-start;
   gap: 70px;
   max-width: 500px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    gap: 30px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -72,12 +78,12 @@ export const Title = styled.h2`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 35px;
-    width: 90%;
+    font-size: 28px;
     text-align: left;
 
     &::after {
-      width: 110px;
+      width: 90px;
+      height: 3px;
     }
   }
 `;
@@ -92,9 +98,9 @@ export const Description = styled.p`
     font-weight: 700;
   }
 
-  /* @media screen and (max-width: 768px) {
-    text-align: justify;
-  } */
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
