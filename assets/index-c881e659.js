@@ -451,12 +451,12 @@ Error generating stack: `+A.message+`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 17px;
+    font-size: 35px;
     width: 90%;
     line-height: 1.5;
 
     &::after {
-      width: 274px;
+      width: 75%;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -479,7 +479,7 @@ Error generating stack: `+A.message+`
 
   @media screen and (max-width: 768px) {
     width: 90%;
-    font-size: 13px;
+    font-size: 20px;
   }
 `,Yc=x.div`
   position: absolute;
