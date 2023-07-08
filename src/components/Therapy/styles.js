@@ -172,24 +172,41 @@ export const Box = styled.div`
   position: relative;
   z-index: 2;
 
-  &:nth-child(1) {
-    box-shadow: 12px 9px 30px 0px rgba(0, 0, 0, 0.25);
-  }
-
-  &:nth-child(2) {
-    box-shadow: -12px 9px 30px 0px rgba(0, 0, 0, 0.25);
-  }
-
   &:nth-child(3) {
-    box-shadow: 12px -9px 30px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 12px 9px 30px 0px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 768px) {
+      box-shadow: none;
+    }
   }
 
   &:nth-child(4) {
+    box-shadow: -12px 9px 30px 0px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 768px) {
+      box-shadow: none;
+    }
+  }
+
+  &:nth-child(5) {
+    box-shadow: 12px -9px 30px 0px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 768px) {
+      box-shadow: none;
+    }
+  }
+
+  &:nth-child(6) {
     box-shadow: -12px -9px 30px 0px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 768px) {
+      box-shadow: none;
+    }
   }
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    height: 300px;
   }
 `;
 
