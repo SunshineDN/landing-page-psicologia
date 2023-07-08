@@ -8,6 +8,7 @@ import BoxTherapy from './components/Therapy/BoxTherapy';
 import PsychoTherapy from './components/PsychoTherapy/PsychoTherapy';
 import BoxesInfo from './components/BoxesInfo/BoxesInfo';
 import Services from './components/Services/Services';
+import Faq from './components/FAQ/FAQ';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -30,6 +31,7 @@ const App = () => {
         <PsychoTherapy />
         <BoxesInfo />
         <Services />
+        <Faq />
       </Container>
   )
 }
