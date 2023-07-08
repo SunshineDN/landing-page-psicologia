@@ -3,9 +3,11 @@ import Home from './components/Home/Home'
 import Header from './components/Header/Header';
 import CardsComponent from './components/Home/Cards';
 import About from './components/About/About';
-import Terapy from './components/Terapy/Terapy';
-import BoxTerapy from './components/Terapy/BoxTerapy';
+import Therapy from './components/Therapy/Therapy';
+import BoxTherapy from './components/Therapy/BoxTherapy';
 import PsychoTherapy from './components/PsychoTherapy/PsychoTherapy';
+import BoxesInfo from './components/BoxesInfo/BoxesInfo';
+import Services from './components/Services/Services';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -13,6 +15,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background: ${({ theme }) => theme.bg_gradient};
+  overflow: hidden;
 `;
 
 const App = () => {
@@ -22,9 +25,11 @@ const App = () => {
         <Home />
         <CardsComponent />
         <About />
-        <Terapy />
-        <BoxTerapy />
+        <Therapy />
+        <BoxTherapy />
         <PsychoTherapy />
+        <BoxesInfo />
+        <Services />
       </Container>
   )
 }

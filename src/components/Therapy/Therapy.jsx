@@ -1,8 +1,8 @@
-import { TerapyContainer, TextWrapper, Title, Text, Glow, Leaf } from './styles'
+import { TherapyContainer, TextWrapper, Title, Text, Glow, Leaf } from './styles'
 
 const Terapy = () => {
   return (
-    <TerapyContainer>
+    <TherapyContainer id="therapy">
       <Title>Como a terapia pode mudar a sua vida</Title>
       <TextWrapper>
         <Text>
@@ -15,7 +15,7 @@ const Terapy = () => {
         <Glow />
         <Leaf />
       </TextWrapper>
-    </TerapyContainer>
+    </TherapyContainer>
   )
 }
 

@@ -2,7 +2,7 @@ import { AboutContainer, DotsSVG, FlowersImage, TextSection, Image, Title, Descr
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <DotsSVG />
       <TextSection>
         <Title>Sobre mim</Title>

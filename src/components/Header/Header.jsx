@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { HeaderContainer, LocalIcon, LocalTelSection, LocalWrapper, LogoIcon, NavBar, RightSection, RightText, StyledLink, NavLink, TelIcon, TelWrapper } from './styles'
+import { HeaderContainer, LocalIcon, LocalTelSection, LocalWrapper, LogoIcon, NavBar, RightSection, RightText, NavLink, TelIcon, TelWrapper } from './styles'
 import { Divide as Hamburger } from 'hamburger-react'
+import { Link } from 'react-scroll'
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -15,7 +16,7 @@ const Header = () => {
       <LogoIcon />
       <RightSection>
         <LocalTelSection>
-          <LocalWrapper>
+          <LocalWrapper to="https://goo.gl/maps/ZnaTTe2UTDk5CYH2A" target="blank">
             <LocalIcon />
             <RightText>Av República do Líbano, 251, Recife PE</RightText>
           </LocalWrapper>
@@ -26,22 +27,57 @@ const Header = () => {
         </LocalTelSection>
         <NavBar>
           <NavLink>
-            <StyledLink to="#home">Início</StyledLink>
+            <Link to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+            >Início</Link>
           </NavLink>
           <NavLink>
-            <StyledLink to="#about">Sobre mim</StyledLink>
+            <Link to="about"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >Sobre mim</Link>
           </NavLink>
           <NavLink>
-            <StyledLink to="#therapy">Terapia</StyledLink>
+            <Link to="therapy"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >Terapia</Link>
           </NavLink>
           <NavLink>
-            <StyledLink to="#services">Serviços</StyledLink>
+            <Link to="services"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >Serviços</Link>
           </NavLink>
           <NavLink>
-            <StyledLink to="#opinions">Opiniões</StyledLink>
+            <Link to="opinions"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >Opiniões</Link>
           </NavLink>
           <NavLink>
-            <StyledLink to="#query">Dúvidas</StyledLink>
+            <Link to="query"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >Dúvidas</Link>
           </NavLink>
         </NavBar>
       </RightSection>

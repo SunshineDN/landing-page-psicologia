@@ -1,6 +1,6 @@
 import { Box, BoxText, BoxTitle, BoxWrapper, Splash, Splash2 } from './styles'
 
-const BoxTerapy = () => {
+const BoxTherapy = () => {
   return (
     <BoxWrapper>
       <Splash />
@@ -34,4 +34,4 @@ const BoxTerapy = () => {
   )
 }
 
-export default BoxTerapy
+export default BoxTherapy

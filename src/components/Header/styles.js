@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Logo from "../../assets/Logo.svg"
 import { BsTelephone } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import { Link as LinkRouter } from "react-router-dom";
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -58,10 +58,19 @@ export const LocalTelSection = styled.div`
   gap: 42px;
 `;
 
-export const LocalWrapper = styled.div`
+export const LocalWrapper = styled(LinkRouter)`
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
 `;
 
 export const LocalIcon = styled(CiLocationOn)`
@@ -97,14 +106,16 @@ export const NavBar = styled.ul`
 
 export const NavLink = styled.li`
   list-style: none;
-`;
 
-export const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: ${({ theme }) => theme.rose};
-  font-family: "Baloo Bhai 2";
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  & a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.rose};
+    font-family: "Baloo Bhai 2";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    user-select: none;
+  }
 `;

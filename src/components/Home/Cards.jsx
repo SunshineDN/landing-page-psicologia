@@ -2,7 +2,7 @@ import { AcolhimentoIcon, AutoconhecimentoIcon, Card, CardText, Cards, Relaciona
 
 const CardsComponent = () => {
   return (
-    <Cards>
+    <Cards id="cards">
       <Card>
         <RelacionamentoIcon />
         <CardText>

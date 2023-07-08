@@ -27,8 +27,11 @@ export const Title = styled.h2`
   }
 
   @media screen and (max-width: 768px) {
+    font-size: 35px;
+    width: 90%;
+
     &::after {
-      width: 90%;
+      width: 75%;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -45,7 +48,7 @@ export const TextWrapper = styled.div`
 export const Text = styled.p`
   font-size: 25px;
   font-weight: 400;
-  font-family: "Gupter";
+  font-family: "Calibri";
   color: ${({ theme }) => theme.grey};
   text-align: justify;
   margin: 0 auto;
@@ -53,6 +56,11 @@ export const Text = styled.p`
   z-index: 1;
   width: 70%;
   line-height: 1.5;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    font-size: 20px;
+  }
 `;
 
 export const Glow = styled.div`
@@ -72,10 +80,11 @@ export const Logo = styled(StrokedLogo)`
   top: 50%;
   transform: translateY(-50%);
   right: 0;
-  z-index: 1;
+  z-index: 0;
+  width: fit-content;
+  height: 70%;
 
-  & path {
-    width: 100%;
-    height: 100%;
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;

@@ -15,6 +15,7 @@ export const AboutContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
+    padding: 0 15px;
   }
 `;
 
@@ -69,6 +70,16 @@ export const Title = styled.h2`
     height: 5px;
     background-color: ${({ theme }) => theme.rose_dark};
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+    width: 90%;
+    text-align: left;
+
+    &::after {
+      width: 110px;
+    }
+  }
 `;
 
 export const Description = styled.p`
@@ -93,7 +104,8 @@ export const ImageWrapper = styled.div`
   z-index: 1;
 
   @media screen and (max-width: 768px) {
-    width: 50%;
+    min-width: 0;
+    max-width: 277px;
   }
 `;
 

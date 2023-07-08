@@ -2,7 +2,7 @@ import { H1, H2, H3, HomeContainer, Image, TextInfo, TextSection, WhatsAppIcon, 
 
 const Home = () => {
   return (
-    <HomeContainer>
+    <HomeContainer id="home">
       <BottomBG />
       <Image />
       <TextSection>

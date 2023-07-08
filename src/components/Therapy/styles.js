@@ -3,7 +3,7 @@ import LeafIMG from "../../assets/leaf.png";
 import Splash_1 from "../../assets/splash1.png";
 import Splash_2 from "../../assets/splash2.png";
 
-export const TerapyContainer = styled.div`
+export const TherapyContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,8 +29,12 @@ export const Title = styled.h2`
   }
 
   @media screen and (max-width: 768px) {
+    font-size: 35px;
+    width: 90%;
+    line-height: 1.5;
+
     &::after {
-      width: 90%;
+      width: 75%;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -47,7 +51,7 @@ export const TextWrapper = styled.div`
 export const Text = styled.p`
   font-size: 25px;
   font-weight: 400;
-  font-family: "Gupter";
+  font-family: "Calibri";
   color: ${({ theme }) => theme.grey};
   text-align: justify;
   margin: 0 auto;
@@ -57,6 +61,7 @@ export const Text = styled.p`
 
   @media screen and (max-width: 768px) {
     width: 90%;
+    font-size: 20px;
   }
 `;
 
@@ -111,11 +116,12 @@ export const BoxWrapper = styled.div`
   }
 
   @media screen and (max-width: 1142px) {
-    padding: 50px 90px;
+    padding: 50px 0;
   }
 
   @media screen and (max-width: 768px) {
     padding: 50px 10px;
+    max-width: 300px;
   }
 `;
 

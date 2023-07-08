@@ -2,10 +2,10 @@ import styled from "styled-components";
 import ProfileIMG from "../../assets/profile 2.png";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
-import Acolhimento from "../../assets/acolhimento.svg";
-import Relacionamento from "../../assets/relacionamento.svg";
-import Sexualidade from "../../assets/sexualidade.svg";
-import Autoconhecimento from "../../assets/autoconhecimento.svg";
+import Acolhimento from "../../assets/icons/acolhimento.svg";
+import Relacionamento from "../../assets/icons/relacionamento.svg";
+import Sexualidade from "../../assets/icons/sexualidade.svg";
+import Autoconhecimento from "../../assets/icons/autoconhecimento.svg";
 import { ReactComponent as Bottom} from "../../assets/bottom.svg"
 
 export const HomeContainer = styled.div`
@@ -23,6 +23,7 @@ export const HomeContainer = styled.div`
   @media (max-width: 768px) {
     flex-wrap: wrap;
     margin-top: 0;
+    padding: 50px 20px;
   }
 `;
 
@@ -40,7 +41,7 @@ export const BottomBG = styled(Bottom)`
 export const Image = styled.img.attrs({
   src: ProfileIMG,
 })`
-  min-width: 285px;
+  min-width: 50%;
   max-width: 600px;
 `;
 
@@ -66,6 +67,10 @@ export const H1 = styled.h1`
   font-family: Gupter;
   font-style: normal;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 export const H2 = styled.h2`
@@ -75,6 +80,10 @@ export const H2 = styled.h2`
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const H3 = styled.h3`
@@ -85,6 +94,10 @@ export const H3 = styled.h3`
   font-style: normal;
   font-weight: 400;
   line-height: 31.43px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const WhatsAppWrapper = styled(Link)`
@@ -109,11 +122,19 @@ export const WhatsAppText = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const WhatsAppIcon = styled(FaWhatsapp)`
   color: ${({ theme }) => theme.blank};
   font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const Cards = styled.div`
@@ -121,7 +142,7 @@ export const Cards = styled.div`
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 100px;
   flex-wrap: wrap;
 `;
