@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
   position: relative;
   width: 100%;
   gap: 50px 115px;
-  margin-bottom: 170px;
+  margin-bottom: 80px;
 
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;

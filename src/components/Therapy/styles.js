@@ -29,12 +29,12 @@ export const Title = styled.h2`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 35px;
+    font-size: 17px;
     width: 90%;
     line-height: 1.5;
 
     &::after {
-      width: 75%;
+      width: 274px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -61,7 +61,7 @@ export const Text = styled.p`
 
   @media screen and (max-width: 768px) {
     width: 90%;
-    font-size: 20px;
+    font-size: 13px;
   }
 `;
 
