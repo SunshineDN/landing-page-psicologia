@@ -18,6 +18,10 @@ export const WhatsAppWrapper = styled(Link)`
     box-shadow: 0 0 25px -10px ${(props) => props.$light ? props.theme.rose_dark : props.theme.blank};
   }
 
+  @media (max-width: 925px) {
+    padding: 5px 15px;
+  }
+
   @media (max-width: 768px) {
     align-self: center;
   }
@@ -31,7 +35,7 @@ export const WhatsAppText = styled.p`
   font-weight: 500;
   line-height: normal;
 
-  @media (max-width: 768px) {
+  @media (max-width: 925px) {
     font-size: 16px;
   }
 `;

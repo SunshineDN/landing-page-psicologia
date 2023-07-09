@@ -22,19 +22,19 @@ const Faq = () => {
   const [questions] = useState([
     {
       title: 'Qual a duração de uma sessão de terapia?',
-      desc: 'A terapia é um processo de autoconhecimento e desenvolvimento pessoal, que tem como objetivo trazer mais qualidade de vida e bem-estar para o paciente. Através de um espaço de escuta e acolhimento, o paciente é convidado a refletir sobre si mesmo, suas relações e seu contexto, de forma a encontrar novas formas de lidar com suas dificuldades e desafios.'
+      desc: 'As sessões de terapia geralmente têm uma duração de 50 minutos, embora possa haver variações dependendo das necessidades individuais e do acordo estabelecido com o terapeuta.'
     },
     {
       title: 'Com que frequência devo comparecer às sessões?',
-      desc: 'A terapia é um processo de autoconhecimento e desenvolvimento pessoal, que tem como objetivo trazer mais qualidade de vida e bem-estar para o paciente. Através de um espaço de escuta e acolhimento, o paciente é convidado a refletir sobre si mesmo, suas relações e seu contexto, de forma a encontrar novas formas de lidar com suas dificuldades e desafios.'
-    },
-    {
-      title: 'Quais as formas de pagamento?',
-      desc: 'A terapia é um processo de autoconhecimento e desenvolvimento pessoal, que tem como objetivo trazer mais qualidade de vida e bem-estar para o paciente. Através de um espaço de escuta e acolhimento, o paciente é convidado a refletir sobre si mesmo, suas relações e seu contexto, de forma a encontrar novas formas de lidar com suas dificuldades e desafios.'
+      desc: 'A frequência das sessões dependerá das suas necessidades e disponibilidade. Inicialmente, é comum agendar sessões semanais, mas isso pode ser ajustado ao longo do processo terapêutico de acordo com a evolução e os objetivos estabelecidos.'
     },
     {
       title: 'A terapia é confidencial?',
-      desc: 'A terapia é um processo de autoconhecimento e desenvolvimento pessoal, que tem como objetivo trazer mais qualidade de vida e bem-estar para o paciente. Através de um espaço de escuta e acolhimento, o paciente é convidado a refletir sobre si mesmo, suas relações e seu contexto, de forma a encontrar novas formas de lidar com suas dificuldades e desafios.'
+      desc: 'Sim, a terapia é estritamente confidencial. Todas as informações compartilhadas durante as sessões são protegidas pelo sigilo profissional e não são divulgadas a terceiros sem o seu consentimento, a menos que haja risco iminente para sua segurança ou a de outras pessoas, conforme exigido por lei.'
+    },
+    {
+      title: 'Quais as formas de pagamento?',
+      desc: 'Aceitamos PIX, transferência bancária e PicPay. Essas opções oferecem praticidade e segurança para os clientes, permitindo que efetuem os pagamentos de forma conveniente.'
     }]);
   const [open, setOpen] = useState(false);
 

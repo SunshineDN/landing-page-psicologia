@@ -108,21 +108,24 @@ export const BoxWrapper = styled.div`
   align-content: center;
   flex-wrap: wrap;
   gap: 45px;
-  min-height: 1000px;
+  min-height: 800px;
   width: 100%;
   position: relative;
-  padding: 50px 390px;
-
-  @media screen and (max-width: 1541px) {
-    padding: 50px 290px;
+  
+  @media screen and (max-width: 1551px) {
+    padding: 0 200px;
   }
 
-  @media screen and (max-width: 1342px) {
-    padding: 50px 190px;
+  @media screen and (max-width: 1161px) {
+    padding: 0 100px;
   }
 
-  @media screen and (max-width: 1142px) {
-    padding: 50px 0;
+  @media screen and (max-width: 961px) {
+    padding: 0 50px;
+  }
+
+  @media screen and (max-width: 861px) {
+    padding: 0;
   }
 
   @media screen and (max-width: 768px) {
@@ -135,7 +138,7 @@ export const Splash = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  width: 250px;
+  width: 150px;
   height: 100%;
   background-image: url(${Splash_1});
   background-size: contain;
@@ -152,7 +155,7 @@ export const Splash2 = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 200px;
+  width: 100px;
   height: 100%;
   background-image: url(${Splash_2});
   background-size: contain;
@@ -179,35 +182,37 @@ export const Box = styled.div`
   position: relative;
   z-index: 2;
 
-  &:nth-child(3) {
-    box-shadow: 12px 9px 30px 0px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width: 1551px) {
+    &:nth-child(3) {
+      box-shadow: 12px 9px 30px 0px rgba(0, 0, 0, 0.25);
 
-    @media screen and (max-width: 768px) {
-      box-shadow: none;
+      @media screen and (max-width: 768px) {
+        box-shadow: none;
+      }
     }
-  }
 
-  &:nth-child(4) {
-    box-shadow: -12px 9px 30px 0px rgba(0, 0, 0, 0.25);
+    &:nth-child(4) {
+      box-shadow: -12px 9px 30px 0px rgba(0, 0, 0, 0.25);
 
-    @media screen and (max-width: 768px) {
-      box-shadow: none;
+      @media screen and (max-width: 768px) {
+        box-shadow: none;
+      }
     }
-  }
 
-  &:nth-child(5) {
-    box-shadow: 12px -9px 30px 0px rgba(0, 0, 0, 0.25);
+    &:nth-child(5) {
+      box-shadow: 12px -9px 30px 0px rgba(0, 0, 0, 0.25);
 
-    @media screen and (max-width: 768px) {
-      box-shadow: none;
+      @media screen and (max-width: 768px) {
+        box-shadow: none;
+      }
     }
-  }
 
-  &:nth-child(6) {
-    box-shadow: -12px -9px 30px 0px rgba(0, 0, 0, 0.25);
+    &:nth-child(6) {
+      box-shadow: -12px -9px 30px 0px rgba(0, 0, 0, 0.25);
 
-    @media screen and (max-width: 768px) {
-      box-shadow: none;
+      @media screen and (max-width: 768px) {
+        box-shadow: none;
+      }
     }
   }
 

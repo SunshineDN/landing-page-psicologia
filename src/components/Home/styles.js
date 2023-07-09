@@ -20,6 +20,10 @@ export const HomeContainer = styled.div`
   background: ${({ theme }) => theme.rose_dark_2};
   gap: 70px;
 
+  @media (max-width: 811px) {
+    gap: 0;
+  }
+
   @media (max-width: 768px) {
     flex-wrap: wrap;
     margin-top: 0;

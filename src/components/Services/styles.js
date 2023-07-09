@@ -10,7 +10,7 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   align-items: center;
   align-content: flex-start;
-  gap: 20px 0px;
+  gap: 40px 0px;
   flex-wrap: wrap;
   background: ${({ theme }) => theme.rose_2};
 
@@ -66,8 +66,10 @@ export const Online = styled(OnlineIcon)`
 
 export const BottomContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-end;
+  width: 70%;
+  gap: 30px;
 
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
@@ -96,10 +98,10 @@ export const BottomTitle = styled.h2`
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  text-align: center;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
+    text-align: center;
   }
 `;
 
