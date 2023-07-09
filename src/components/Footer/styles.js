@@ -5,6 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
+  border-top: 3px solid ${({ theme }) => theme.rose_dark};
   width: 100%;
   padding: 22px;
   background-color: ${({ theme }) => theme.rose_2};
