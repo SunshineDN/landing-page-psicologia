@@ -9,6 +9,8 @@ import PsychoTherapy from './components/PsychoTherapy/PsychoTherapy';
 import BoxesInfo from './components/BoxesInfo/BoxesInfo';
 import Services from './components/Services/Services';
 import Faq from './components/FAQ/FAQ';
+import Footer from './components/Footer/Footer';
+import { useState } from 'react';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -20,10 +22,12 @@ const Container = styled.div`
 `;
 
 const App = () => {
+  const [active, setIsActive] = useState(false);
+
   return (
       <Container>
-        <Header />
-        <Home />
+        <Header active={active} setActive={setIsActive} />
+        <Home active={active} />
         <CardsComponent />
         <About />
         <Therapy />
@@ -32,6 +36,7 @@ const App = () => {
         <BoxesInfo />
         <Services />
         <Faq />
+        <Footer />
       </Container>
   )
 }

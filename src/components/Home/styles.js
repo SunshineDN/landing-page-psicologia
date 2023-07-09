@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import ProfileIMG from "../../assets/profile 2.png";
-import { Link } from "react-router-dom";
-import { FaWhatsapp } from "react-icons/fa";
 import Acolhimento from "../../assets/icons/acolhimento.svg";
 import Relacionamento from "../../assets/icons/relacionamento.svg";
 import Sexualidade from "../../assets/icons/sexualidade.svg";
@@ -9,7 +7,8 @@ import Autoconhecimento from "../../assets/icons/autoconhecimento.svg";
 import { ReactComponent as Bottom} from "../../assets/bottom.svg"
 
 export const HomeContainer = styled.div`
-  margin-top: 6px;
+  user-select: ${({ open }) => (open ? "none" : "auto")};
+  pointer-events: ${({ open }) => (open ? "none" : "auto")};
   padding: 40px 0;
   display: flex;
   flex-direction: row;
@@ -102,43 +101,6 @@ export const H3 = styled.h3`
 
   @media (max-width: 768px) {
     font-size: 14px;
-  }
-`;
-
-export const WhatsAppWrapper = styled(Link)`
-  display: flex;
-  padding: 5px 24px;
-  align-items: center;
-  gap: 23px;
-  border-radius: 35.683px;
-  background: ${({ theme }) => theme.rose};
-  box-shadow: 0px 4.381547451019287px 0px 0px ${({ theme }) => theme.rose_dark};
-  text-decoration: none;
-
-  @media (max-width: 768px) {
-    align-self: center;
-  }
-`;
-
-export const WhatsAppText = styled.p`
-  color: ${({ theme }) => theme.blank};
-  font-size: 20px;
-  font-family: "Baloo Bhai 2";
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
-
-export const WhatsAppIcon = styled(FaWhatsapp)`
-  color: ${({ theme }) => theme.blank};
-  font-size: 30px;
-
-  @media (max-width: 768px) {
-    font-size: 24px;
   }
 `;
 

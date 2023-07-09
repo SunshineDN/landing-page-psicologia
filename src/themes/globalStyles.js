@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  *::selection {
+    background-color: #d2d2d2;
+  }
+
   @font-face {
     font-family: 'Calibri';
     src: url(${calibri_italic}) format('truetype');

@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import { ReactComponent as AgendaIcon } from '../../assets/icons/agenda.svg';
 import { ReactComponent as ClockIcon } from '../../assets/icons/clock.svg';
 import { ReactComponent as OnlineIcon } from '../../assets/icons/online.svg';
-import { Link } from 'react-router-dom';
-import { FaWhatsapp } from 'react-icons/fa';
-
 
 export const ServicesContainer = styled.div`
   display: flex;
@@ -117,38 +114,5 @@ export const Text = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 16px;
     text-align: center;
-  }
-`;
-
-export const WhatsAppWrapper = styled(Link)`
-  display: flex;
-  padding: 5px 24px;
-  align-items: center;
-  gap: 23px;
-  border-radius: 35.683px;
-  background: ${({ theme }) => theme.rose};
-  box-shadow: 0px 4.381547451019287px 0px 0px ${({ theme }) => theme.rose_dark};
-  text-decoration: none;
-`;
-
-export const WhatsAppText = styled.p`
-  color: ${({ theme }) => theme.blank};
-  font-size: 20px;
-  font-family: "Baloo Bhai 2";
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
-
-export const WhatsAppIcon = styled(FaWhatsapp)`
-  color: ${({ theme }) => theme.blank};
-  font-size: 30px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
   }
 `;

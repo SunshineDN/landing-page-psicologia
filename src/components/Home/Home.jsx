@@ -1,8 +1,10 @@
-import { H1, H2, H3, HomeContainer, Image, TextInfo, TextSection, WhatsAppIcon, WhatsAppText, WhatsAppWrapper, BottomBG } from "./styles"
+/* eslint-disable react/prop-types */
+import { H1, H2, H3, HomeContainer, Image, TextInfo, TextSection, BottomBG } from "./styles";
+import ButtonWhatsApp from "../ButtonWhatsApp/ButtonWhatsApp";
 
-const Home = () => {
+const Home = ({ active }) => {
   return (
-    <HomeContainer id="home">
+    <HomeContainer id="home" $open={active}>
       <BottomBG />
       <Image />
       <TextSection>
@@ -11,12 +13,7 @@ const Home = () => {
           <H1>Mariana Sá de Lima</H1>
           <H2>Minha missão é te ajudar a alcançar uma vida mais plena, fortalecendo sua saúde mental. Invista em si mesmo e descubra todo o seu potencial.</H2>
         </TextInfo>
-        <WhatsAppWrapper>
-          <WhatsAppIcon />
-          <WhatsAppText>
-            Marque uma consulta 
-          </WhatsAppText>
-        </WhatsAppWrapper>
+        <ButtonWhatsApp light={false} />
       </TextSection>
     </HomeContainer>
   )

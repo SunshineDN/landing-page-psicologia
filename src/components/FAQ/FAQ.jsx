@@ -47,7 +47,7 @@ const Faq = () => {
   }
 
   return (
-    <FAQContainer>
+    <FAQContainer id="query">
       <Splash2 />
       <Splash3 />
       <QueryWrapper>
@@ -72,10 +72,10 @@ const Faq = () => {
             <BoxTitle>Email</BoxTitle>
           </BoxTitleSection>
           <BoxSubdescription>
-            Enviei sua dúvida por e-mail
+            Envie sua dúvida por e-mail
           </BoxSubdescription>
           <BoxDescription>
-            marianapsi@mailtest.com
+            marianasadelima@gmail.com
           </BoxDescription>
         </BoxWrapper>
         <BoxWrapper>
@@ -84,10 +84,10 @@ const Faq = () => {
             <BoxTitle>WhatsApp</BoxTitle>
           </BoxTitleSection>
           <BoxSubdescription>
-            Enviei sua dúvida por e-mail
+            Envie sua dúvida por WhatsApp
           </BoxSubdescription>
           <BoxDescription>
-            marianapsi@mailtest.com
+            (81) 98727-4688
           </BoxDescription>
         </BoxWrapper>
       </RightSectionWrapper>

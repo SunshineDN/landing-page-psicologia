@@ -39,6 +39,8 @@ export const QueryWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 50px 10px;
+    max-width: 100%;
+    border-radius: 0;
   }
 `;
 
@@ -201,6 +203,10 @@ export const BoxDescription = styled.p`
   font-style: normal;
   font-weight: 700;
   color: ${({ theme }) => theme.grey};
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const BoxSubdescription = styled.p`
@@ -216,7 +222,7 @@ export const Splash2 = styled.div`
   top: 0;
   left: 0;
   width: 150px;
-  height: 100%;
+  height: 1119px;
   background-image: url(${SplashOverlay2});
   background-repeat: no-repeat;
   background-size: cover;
@@ -233,7 +239,7 @@ export const Splash3 = styled.div`
   top: 0;
   right: 0;
   width: 230px;
-  height: 100%;
+  height: 1119px;
   background-image: url(${SplashOverlay3});
   background-repeat: no-repeat;
   background-size: cover;

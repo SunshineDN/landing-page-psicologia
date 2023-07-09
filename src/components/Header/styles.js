@@ -7,19 +7,22 @@ import { Link as LinkRouter } from "react-router-dom";
 export const HeaderContainer = styled.div`
   display: flex;
   width: 100%;
-  padding: 0px 27px;
+  padding: 12px 27px;
   justify-content: space-between;
+  background: ${({ theme }) => theme.rose_dark_2};
 
   & .hamburger-react {
     display: none;
     border-radius: 4px;
+    z-index: 999;
   }
 
   @media (max-width: 768px) {
     position: absolute;
     align-items: center;
     padding: 15px;
-    z-index: 999;
+    background-color: transparent;
+    z-index: 997;
 
     & > .hamburger-react {
       display: block;
@@ -41,6 +44,12 @@ export const LogoIcon = styled.div`
   }
 `;
 
+export const LocalTelSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 42px;
+`;
+
 export const RightSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -48,37 +57,26 @@ export const RightSection = styled.div`
   justify-content: space-around;
 
   @media (max-width: 768px) {
-    display: none;
-  }
-`;
+    visibility: hidden;
 
-export const LocalTelSection = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 42px;
+    ${LocalTelSection} {
+      display: none;
+    }
+  }
 `;
 
 export const LocalWrapper = styled(LinkRouter)`
   display: flex;
   align-items: center;
   gap: 10px;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  &:active {
-    text-decoration: underline;
-  }
 `;
 
 export const LocalIcon = styled(CiLocationOn)`
   font-size: 20px;
-  color: ${({ theme }) => theme.rose};
+  color: ${({ theme }) => theme.blank};
 `;
 
-export const TelWrapper = styled.div`
+export const TelWrapper = styled(LinkRouter)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +85,7 @@ export const TelWrapper = styled.div`
 
 export const TelIcon = styled(BsTelephone)`
   font-size: 20px;
-  color: ${({ theme }) => theme.rose};
+  color: ${({ theme }) => theme.blank};
 `;
 
 export const RightText = styled.p`
@@ -102,14 +100,34 @@ export const NavBar = styled.ul`
   display: flex;
   align-items: flex-start;
   gap: 28px;
+
+  @media (max-width: 768px) {
+    visibility: ${({ $open }) => ($open ? "visible" : "hidden")};
+    opacity: ${({ $open }) => ($open ? "1" : "0")};
+    position: fixed;
+    gap: 50px;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: ${({ theme }) => theme.white};
+    transition: all 0.3s ease-in-out;
+    z-index: 998;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+  }
 `;
 
 export const NavLink = styled.li`
   list-style: none;
+  transition: all 0.3s ease-in-out;
 
   & a {
     text-decoration: none;
-    color: ${({ theme }) => theme.rose};
+    color: ${({ theme }) => theme.blank};
     font-family: "Baloo Bhai 2";
     font-size: 19px;
     font-style: normal;
@@ -117,5 +135,43 @@ export const NavLink = styled.li`
     line-height: normal;
     cursor: pointer;
     user-select: none;
+    transition: all 0.3s ease-in-out;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: ${({ theme }) => theme.logo_color};
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+  }
+
+  &:hover {
+    transform: skewX(-15deg);
+
+    & a {
+      color: ${({ theme }) => theme.logo_color};
+    }
+
+    & a::after {
+      transform: scaleX(1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    & a {
+      font-size: 24px;
+      color: ${({ theme }) => theme.grey};
+
+      &::after {
+        background: ${({ theme }) => theme.rose_dark};
+      }
+
+      &:hover {
+        color: ${({ theme }) => theme.rose_dark};
+      }
+    }
   }
 `;

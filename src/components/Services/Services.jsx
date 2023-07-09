@@ -1,4 +1,5 @@
-import { Agenda, BottomContainer, BottomTitle, Clock, ItemWrapper, Online, ServicesContainer, TextWrapper, Title, Text, TopContainer, WhatsAppIcon, WhatsAppText, WhatsAppWrapper } from './styles'
+import { Agenda, BottomContainer, BottomTitle, Clock, ItemWrapper, Online, ServicesContainer, TextWrapper, Title, Text, TopContainer } from './styles'
+import ButtonWhatsApp from '../ButtonWhatsApp/ButtonWhatsApp'
 
 const Services = () => {
   return (
@@ -26,12 +27,7 @@ const Services = () => {
             Atendimento individualizado e tratamento focado, permitindo que você construa a melhor versão de si mesmo!
           </Text>
         </TextWrapper>
-        <WhatsAppWrapper>
-          <WhatsAppIcon />
-          <WhatsAppText>
-            Marque uma consulta
-          </WhatsAppText>
-        </WhatsAppWrapper>
+        <ButtonWhatsApp light={true} />
       </BottomContainer>
     </ServicesContainer>
   )
