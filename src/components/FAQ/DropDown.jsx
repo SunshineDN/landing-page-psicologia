@@ -4,8 +4,8 @@ import { AddButton, Answer, Question, QuestionBox, QuestionTopSection, RemoveBut
 
 const DropDown = ({ open, toggle, title, desc }) => {
   return (
-    <QuestionBox onClick={toggle}>
-      <QuestionTopSection>
+    <QuestionBox>
+      <QuestionTopSection onClick={toggle}>
         <Question>{title}</Question>
         {open ? <RemoveButton /> : <AddButton />}
       </QuestionTopSection>

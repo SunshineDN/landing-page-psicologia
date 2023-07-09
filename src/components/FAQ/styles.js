@@ -17,6 +17,11 @@ export const FAQContainer = styled.div`
   gap: 0 200px;
   flex-wrap: wrap;
   padding: 60px 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 100px 0;
+    gap: 0;
+  }
 `;
 
 export const QueryWrapper = styled.div`
@@ -30,6 +35,10 @@ export const QueryWrapper = styled.div`
 
   @media screen and (max-width: 1148px) {
     margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 10px;
   }
 `;
 
@@ -51,7 +60,6 @@ export const QuestionBox = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 20px;
   position: relative;
   z-index: 1;
 
@@ -59,25 +67,15 @@ export const QuestionBox = styled.div`
     position: relative;
     top: -20px;
     transition: height 500ms;
-    background-color: ${({ theme }) => theme.blank};
+    background-color: ${({ theme }) => theme.rose_dark};
     border-radius: 10px;
-    box-shadow: 11.25266170501709px 8.439496994018555px 20px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 11.25266170501709px 8.439496994018555px 20px rgba(0, 0, 0, 0.25); */
     z-index: -1;
   }
-`;
 
-export const QuestionTopSection = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  padding: 20px;
-  background-color: ${({ theme }) => theme.rose_dark};
-  border-radius: 10px;
-  cursor: pointer;
-  user-select: none;
-  
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const Question = styled.h3`
@@ -86,15 +84,10 @@ export const Question = styled.h3`
   font-style: normal;
   font-weight: 700;
   color: ${({ theme }) => theme.blank};
-`;
 
-export const Answer = styled.p`
-  font-family: "Calibri";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  color: ${({ theme }) => theme.grey};
-  padding: 20px;
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const AddButton = styled(IoMdAdd)`
@@ -107,12 +100,45 @@ export const RemoveButton = styled(IoMdRemove)`
   color: ${({ theme }) => theme.blank};
 `;
 
+export const QuestionTopSection = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: ${({ theme }) => theme.rose_dark};
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    & ${AddButton}, ${RemoveButton}, ${Question} {
+      opacity: 0.8;
+    }
+  }
+`;
+
+export const Answer = styled.p`
+  font-family: "Calibri";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: ${({ theme }) => theme.blank};
+  padding: 40px 20px 20px 20px;
+`;
+
 export const RightSectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 70px;
+
+  @media screen and (max-width: 768px) {
+    gap: 50px;
+    padding: 0 20px;
+  }
 `;
 
 export const RightSectionTitle = styled.h2`
@@ -122,6 +148,11 @@ export const RightSectionTitle = styled.h2`
   font-weight: 700;
   color: ${({ theme }) => theme.grey};
   text-align: left;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 32px;
+  }
 `;
 
 export const BoxWrapper = styled.div`
@@ -191,6 +222,10 @@ export const Splash2 = styled.div`
   background-size: cover;
   background-position: center;
   z-index: -1;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Splash3 = styled.div`
@@ -205,4 +240,8 @@ export const Splash3 = styled.div`
   background-position: center;
   z-index: -1;
   opacity: 0.3;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
