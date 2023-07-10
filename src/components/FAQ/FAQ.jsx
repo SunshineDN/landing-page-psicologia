@@ -75,7 +75,7 @@ const Faq = () => {
             Envie sua dúvida por e-mail
           </BoxSubdescription>
           <BoxDescription>
-            marianasadelima@gmail.com
+            marianalimapsicologia@gmail.com
           </BoxDescription>
         </BoxWrapper>
         <BoxWrapper>

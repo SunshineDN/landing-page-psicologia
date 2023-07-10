@@ -51,7 +51,7 @@ const Footer = () => {
               <EmailWrapper>
                 <Email />
                 <ContactInfo to={"mailto:marianasadelima@gmail.com?&body=Olá, Mariana! Quero agendar uma consulta."} target={"blank"}>
-                  marianasadelima@gmail.com
+                  marianalimapsicologia@gmail.com
                 </ContactInfo>
               </EmailWrapper>
               <WhatsAppWrapper>
